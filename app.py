@@ -30,7 +30,7 @@ user_input = st.text_area("Movie Review")
 
 if st.button("Classify"):
     sentiment,predict_proba = predict_sentiment(user_input)
-    st.write("Sentiment:{sentiment}")
-    st.write("Predict Score:{predict_proba}")
+    st.write("Sentiment: ", sentiment)
+    st.write("Predict Score: ", predict_proba)
 else:
     st.write("Please enter the movie review")
